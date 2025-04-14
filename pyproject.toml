@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "asmg-workflow"
+dynamic = ["version"]
+description = 'asmg_workflow is a package for scientific workflow construction.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "sandersa", email = "aric.sanders@nist.gov" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["networkx","pyvis","matplotlib","numpy","pandas","traitlets","sortedcontainers","pyyaml","pymongo","pyvisa"]
+
+[project.urls]
+Documentation = "https://github.com/sandersa/asmg_workflow#readme"
+Issues = "https://github.com/sandersa/asmg_workflow/issues"
+Source = "https://github.com/sandersa/asmg_workflow"
+
+[tool.hatch.version]
+path = "asmg_workflow/__init__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:asmg_workflow tests}"
+
+[tool.coverage.run]
+source_pkgs = ["asmg_workflow", "tests"]
+branch = true
+parallel = true
+omit = [
+  "asmg_workflow/__about__.py",
+]
+
+[tool.coverage.paths]
+asmg_workflow = ["asmg_workflow", "*/asmg-workflow/asmg_workflow"]
+tests = ["tests", "*/asmg-workflow/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
