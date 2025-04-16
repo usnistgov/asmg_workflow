@@ -4,7 +4,7 @@ asmg_workflow is a package for scientific workflow construction. This package is
 # Installation 
 ## Method 1 - Directly from Github
 ```shell
-pip install git+https://github.com/sandersa-nist/asmg_workflow.git
+pip install git+https://github.com/usnistgov/asmg_workflow.git
 ```
 ## Method 2 - Clone then Install
 1. Use your favorite way to clone the repo or download the zip file and extract it.  
