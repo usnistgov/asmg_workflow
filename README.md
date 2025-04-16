@@ -53,10 +53,12 @@ It is worth noting the Workflow itself is a task so you can use it as the beginn
 
 
 # Code Structure
-This repository relies on [tasks.py](./asmg_workflow/tasks.py), [workflows.py](./asmg_workflow/workflows.py), [logs.py](./asmg_workflow/logs.py) and [utils.py](./asmg_workflow/utils.py)for its functionality, for API style documentation see [documentation](https://sandersa-nist.github.io/asmg_workflow/documentation/asmg_workflow.html).
+This repository relies on [tasks.py](./asmg_workflow/tasks.py), [workflows.py](./asmg_workflow/workflows.py), [logs.py](./asmg_workflow/logs.py) and [utils.py](./asmg_workflow/utils.py)for its functionality, for API style documentation see [documentation](https://pages.nist.gov/asmg_workflow).
 
-# [Example](./examples/workflow_tasks_example.ipynb)
-# [API Documentation](https://sandersa-nist.github.io/asmg_workflow/documentation/asmg_workflow.html) 
+# Example
+This [notebook](./examples/workflow_tasks_example.ipynb) is an example on how to use the nasctn_workflow software to create complex sequences of tasks.
+# API Documentation
+The [API documentation](https://pages.nist.gov/asmg_workflow) can be found here, the landing page is the `__init__.py` of the file.
 
 # Contact
 Aric Sanders [aric.sanders@nist.gov](mailto:aric.sanders@nist.gov)
