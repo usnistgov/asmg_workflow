@@ -422,7 +422,7 @@ class MultipleDependentFunctionTask(Task):
             if self.task_options["log"]:
                 self.log.add_entry(f"Execution of function {self.function} has begun")
             self.started = True
-            self.output = eval(f"self.function(*{self.args},**{self.kwargs})")
+            self.output = exec(f"self.function(*self.args,**self.kwargs)")
             if self.task_options["log"]:
                 self.log.add_entry(f"Execution of function {self.function} has completed")
             self.completed = True
