@@ -1,8 +1,0 @@
-- event: Task linear was created.
-  timestamp: 2025-05-10 00:13:03.552603
-- event: Task id is c84bdf53-7da5-49f3-ba70-e6e8874fd2bd
-  timestamp: 2025-05-10 00:13:03.553647
-- event: Execution of function <function f1 at 0x00000250B9F96F70> has begun
-  timestamp: 2025-05-10 00:13:08.511126
-- event: Execution of function <function f1 at 0x00000250B9F96F70> has completed
-  timestamp: 2025-05-10 00:13:08.515146
