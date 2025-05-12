@@ -1,0 +1,158 @@
+- event: Task cubic was created.
+  timestamp: 2025-05-10 00:13:03.592288
+- event: Task id is ec1ad208-2d2a-4b0b-a236-dfafb862f7a5
+  timestamp: 2025-05-10 00:13:03.595309
+- checker: task_checker
+  duration: null
+  event: A task dependency was added.
+  input:
+    task: !!python/object:asmg_workflow.tasks.DependentFunctionTask
+      completed: true
+      dependencies:
+      - !!python/object/new:asmg_workflow.tasks.TaskDependency
+        dictitems:
+          checker: task_checker
+          duration: null
+          input: &id003
+            task: !!python/object:asmg_workflow.tasks.FunctionTask
+              args:
+              - 1010000000.0
+              completed: true
+              dependencies: []
+              dependency_durations: []
+              dependency_repeats: []
+              dependency_times: []
+              depth: 0
+              duration: !!python/object/apply:datetime.timedelta
+              - 0
+              - 0
+              - 0
+              function: !!python/name:__main__.f1 ''
+              id: !!python/object:uuid.UUID
+                int: 266239551013537837875996858156714021565
+              kwargs: {}
+              log: !!python/object:asmg_workflow.logs.Log
+                auto_name: New_Log_20250510_001.yaml
+                file_path: linear_log_20250510_001.yaml
+                log:
+                - event: Task linear was created.
+                  timestamp: 2025-05-10 00:13:03.552603
+                - event: Task id is c84bdf53-7da5-49f3-ba70-e6e8874fd2bd
+                  timestamp: 2025-05-10 00:13:03.553647
+                - event: Execution of function <function f1 at 0x00000250B9F96F70>
+                    has begun
+                  timestamp: 2025-05-10 00:13:08.511126
+                - event: Execution of function <function f1 at 0x00000250B9F96F70>
+                    has completed
+                  timestamp: 2025-05-10 00:13:08.515146
+                log_options:
+                  auto_save: true
+                  auto_save_mode: w
+                  db_serializer: null
+                  directory: c:\Users\sandersa\usnistgov\asmg_workflow\examples
+                  formatting_string: null
+                  general_descriptor: Log
+                  lock_keys: false
+                  required_keys: null
+                  serializer: &id001 !!python/object:asmg_workflow.logs.YamlSerializer
+                    extension: yaml
+                  specific_descriptor: New
+                n: 0
+                serializer: *id001
+              max_tries: 1
+              met_dependencies: []
+              name: linear
+              output: 3030000004.0
+              path: New_Task_20250510_001.task
+              retries: 0
+              start_time: 2025-05-10 00:13:03.554690
+              started: true
+              task_options:
+                auto_log: true
+                log: true
+                log_serializer: *id001
+                name: linear
+              timer: 2025-05-10 00:13:03.554690
+          number_repeats: null
+          on_fail: error
+          repeat_time: null
+          type: task
+      dependency_durations:
+      - &id002 !!python/object/apply:datetime.timedelta
+        - 0
+        - 0
+        - 8000
+      dependency_repeats:
+      - 0
+      dependency_times:
+      - &id005 2025-05-10 00:13:03.599287
+      depth: 1
+      duration: *id002
+      function: !!python/name:__main__.f2 ''
+      id: !!python/object:uuid.UUID
+        int: 229228205694799034022404326402274328829
+      log: !!python/object:asmg_workflow.logs.Log
+        auto_name: New_Log_20250510_001.yaml
+        file_path: square_log_20250510_001.yaml
+        log:
+        - event: Task square was created.
+          timestamp: 2025-05-10 00:13:03.555739
+        - event: Task id is ac73bf1d-8b9f-4ab2-bfdf-5e041fb780fd
+          timestamp: 2025-05-10 00:13:03.589289
+        - checker: task_checker
+          duration: null
+          event: A task dependency was added.
+          input: *id003
+          number_repeats: null
+          on_fail: error
+          repeat_time: null
+          timestamp: 2025-05-10 00:13:03.599287
+          type: task
+        - event: The task square met the dependency task
+          timestamp: 2025-05-10 00:13:08.522175
+        - event: Execution of function <function f2 at 0x00000250B9F96CA0> has begun
+          timestamp: 2025-05-10 00:13:08.529179
+        - event: Execution of function <function f2 at 0x00000250B9F96CA0> has completed
+          timestamp: 2025-05-10 00:13:08.541605
+        log_options:
+          auto_save: true
+          auto_save_mode: w
+          db_serializer: null
+          directory: c:\Users\sandersa\usnistgov\asmg_workflow\examples
+          formatting_string: null
+          general_descriptor: Log
+          lock_keys: false
+          required_keys: null
+          serializer: &id004 !!python/object:asmg_workflow.logs.YamlSerializer
+            extension: yaml
+          specific_descriptor: New
+        n: 0
+        serializer: *id004
+      max_tries: 1
+      met_dependencies:
+      - true
+      name: square
+      output: 9.18090002424e+18
+      path: New_Task_20250510_001.task
+      retries: 0
+      start_time: 2025-05-10 00:13:03.591287
+      started: true
+      task_options:
+        auto_log: true
+        log: true
+        log_serializer: *id004
+        name: square
+      task_outputs:
+      - 3030000004.0
+      timer: *id005
+  number_repeats: null
+  on_fail: error
+  repeat_time: null
+  timestamp: 2025-05-10 00:13:03.613845
+  type: task
+- event: The task cubic met the dependency task
+  timestamp: 2025-05-10 00:13:08.555821
+- event: Execution of function <function f3 at 0x00000250BF96FF70> has begun
+  timestamp: 2025-05-10 00:13:08.572832
+- event: Execution of function <function f3 at 0x00000250BF96FF70> has completed
+  timestamp: 2025-05-10 00:13:08.622072

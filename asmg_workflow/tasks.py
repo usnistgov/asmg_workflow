@@ -385,7 +385,7 @@ class DependentFunctionTask(Task):
                 #print(f"The dependencies are {self.dependencies}")
                 if "task" in dependency.values():
                     task = dependency['input']['task']
-                    #print(f"The task dependency has this output: {task.output}")
+                    print(f"The task dependency has this output: {task.output}")
                     self.task_outputs.append(task.output)
             if self.task_options["log"]:
                 self.log.add_entry(f"Execution of function {self.function} has begun")

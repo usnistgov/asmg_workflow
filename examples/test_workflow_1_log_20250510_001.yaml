@@ -1,0 +1,24 @@
+- event: Task test_workflow_1 was created.
+  timestamp: 2025-05-10 00:13:03.636342
+- event: Task id is 3df46408-2bb5-4090-802e-056cc5231c6d
+  timestamp: 2025-05-10 00:13:03.637332
+- event: Starting slot 0, tasks ['Start_test_workflow_1'] have started
+  timestamp: 2025-05-10 00:13:08.505745
+- event: The task Start_test_workflow_1 has completed
+  timestamp: 2025-05-10 00:13:08.507118
+- event: Starting slot 1, tasks ['linear'] have started
+  timestamp: 2025-05-10 00:13:08.518128
+- event: The task linear has completed
+  timestamp: 2025-05-10 00:13:08.520167
+- event: Starting slot 2, tasks ['square'] have started
+  timestamp: 2025-05-10 00:13:08.547602
+- event: The task square has completed
+  timestamp: 2025-05-10 00:13:08.551610
+- event: Starting slot 3, tasks ['cubic'] have started
+  timestamp: 2025-05-10 00:13:08.642224
+- event: The task cubic has completed
+  timestamp: 2025-05-10 00:13:08.645200
+- event: Starting slot 4, tasks ['Start_test_workflow_1'] have started
+  timestamp: 2025-05-10 00:13:08.659203
+- event: The task Start_test_workflow_1 has completed
+  timestamp: 2025-05-10 00:13:08.662215
