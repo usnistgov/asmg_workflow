@@ -340,7 +340,9 @@ class Task():
                     else:
                         self.throw_dependency_error(dependency)
 
-
+    def __repr__(self):
+        return f"Task({self.task_options})"
+    
 class FunctionTask(Task):
     def __init__(self,path = None, function = None, args = [] ,kwargs = {},**options):
         super(FunctionTask,self).__init__(path,**options)
